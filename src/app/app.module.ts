@@ -1,6 +1,6 @@
+// The angular imports
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -9,8 +9,11 @@ import { AppComponent } from './app.component';
     AppComponent,
   ],
   imports: [
+    // Angular
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    &-button{
+        &--menu{
+            margin-left: 80px;
+        }
+        &--cart{
+            margin-right: 80px;
+        }
+    }
+    &--title{
+        font-size: 25px;
+        font-weight: 700;
+        text-decoration:underline;
+    }
+}
