@@ -5,9 +5,10 @@ import { HomeRoutingModule } from './home-routing.module';
 // Views
 import { HomeComponent } from './home.component';
 import { ProductsComponent } from './views/products/products.component';
-import { ProductCardComponent } from './components/product-card/product-card.component';
+// Components
+import { ProductCardComponent } from '@home/components';
 // Shared
-import { NavbarComponent } from 'src/app/shared/components';
+import { NavbarComponent } from '@shared/components';
 // Material Imports
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
@@ -19,12 +20,16 @@ import { MatButtonModule } from '@angular/material/button';
     // Views
     HomeComponent,
     ProductsComponent,
+    // Components
     ProductCardComponent
   ],
   imports: [
+    // Angular
     CommonModule,
     HomeRoutingModule,
+    // Shared
     NavbarComponent,
+    // Material
     MatIconModule,
     MatCardModule,
     MatButtonModule
