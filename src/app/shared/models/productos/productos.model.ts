@@ -1,4 +1,4 @@
-export interface productos{
+export interface Productos{
     destacado: number
     nombre: string
     id_producto: number

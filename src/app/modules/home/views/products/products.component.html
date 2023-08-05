@@ -1,5 +1,7 @@
-<div style="display:flex; width: 300px; margin-top: 16px;">
-    <app-product-card></app-product-card>
-    <app-product-card></app-product-card>
-    <app-product-card></app-product-card>
-</div>
+
+    <div class="product-container">
+        <div class="product-card"*ngFor="let product of listaProductos">
+            <app-product-card  [producto]="product"></app-product-card>
+        </div>
+    </div>
+

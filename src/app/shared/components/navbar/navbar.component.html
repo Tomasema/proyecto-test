@@ -1,18 +1,18 @@
 <mat-toolbar class="navbar" color="primary">
   <!-- Products -->
-  <div class="navbar__container-pc" (click)="SwitchOption()" *ngIf="!this.SwitchMenuOptions">
-    <button class="navbar-button--pc" mat-icon-button>
+  <div routerLink="/home/product" class="navbar__container-pc" (click)="SwitchOption()" *ngIf="!this.SwitchMenuOptions">
+    <button  class="navbar-button--pc" mat-icon-button>
         <img src="assets/svg/pc.svg">
     </button>
-    <h3 routerLink="/home/product"> 
+    <h3 > 
       Productos
     </h3>
   </div>
-  <div class="navbar__container-pc" (click)="SwitchOption()" *ngIf="this.SwitchMenuOptions">
+  <div routerLink="/home" class="navbar__container-pc" (click)="SwitchOption()" *ngIf="this.SwitchMenuOptions">
     <button class="navbar-button--pc" mat-icon-button>
         <mat-icon>arrow_left</mat-icon>
     </button>
-    <h3 routerLink="/home"> 
+    <h3> 
       Atras
     </h3>
   </div>

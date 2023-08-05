@@ -1,10 +1,31 @@
 .product{
-  margin-left: 16px;
+  width: 100%;
+  height: 300px;
+  color: #181818;
     &--image {
         width: 100px;
         height: 100px;
         background-color: #ccc;
         border-radius: 50%;
       }
+      &--buy{
+        position: absolute;
+        bottom: 10px;
+      }
+      &--subtitle{
+        position: absolute;
+        color: #181818;
+        bottom: 60px;
+        left: 16px;
+        font-size: 20px;
+        font-weight: 700;
+      }
 }
+
+::ng-deep{
+  .mat-mdc-card{
+      background-color: #ffec81d5 !important;
+      box-shadow: none !important;
+  }
+} 
   

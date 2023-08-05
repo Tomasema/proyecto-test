@@ -1,16 +1,17 @@
 <mat-card class="product">
     <mat-card-header>
-      <div mat-card-avatar class="product--image"></div>
-      <mat-card-title>Nombre del Producto</mat-card-title>
-      <mat-card-subtitle>Precio: $99.99</mat-card-subtitle>
+      <mat-card-title>{{producto.nombre}}</mat-card-title>
     </mat-card-header>
-    <img mat-card-image src="ruta-de-la-imagen-del-producto.jpg" alt="Imagen del Producto">
+    <img mat-card-image src="https://compragamer.net/pga/imagenes_publicadas/{{producto.imagenes.nombre}}-med.jpg" alt="Imagen del Producto">
     <mat-card-content>
-      Descripción del producto: Aquí puedes escribir una breve descripción del producto.
+      <mat-card-content>Subcategoria: {{producto.id_subcategoria}}</mat-card-content>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>Comprar</button>
-      <button mat-button>Detalles</button>
+      <mat-card-subtitle class="product--subtitle">{{producto.precio | currency}}</mat-card-subtitle>
+      <button mat-button color="primary" class="product--buy">
+        <mat-icon>add_shopping_cart</mat-icon>
+        Agregar al carro de compras
+      </button>
     </mat-card-actions>
   </mat-card>
   
