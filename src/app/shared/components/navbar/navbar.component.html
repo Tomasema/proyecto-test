@@ -1,16 +1,22 @@
 <mat-toolbar class="navbar" color="primary">
-  <!-- Menu -->
-  <div class="navbar__container-menu">
-    <button class="navbar-button--menu" mat-icon-button>
-      <mat-icon>menu</mat-icon>
+  <!-- Products -->
+  <div class="navbar__container-pc" (click)="SwitchOption()" *ngIf="!this.SwitchMenuOptions">
+    <button class="navbar-button--pc" mat-icon-button>
+        <img src="assets/svg/pc.svg">
     </button>
+    <h3 routerLink="/home/product"> 
+      Productos
+    </h3>
   </div>
-  <!-- Title -->
-  <div class="navbar__container-title">
-    <h2 class="navbar--title">
-      COMPRAGAMER
-    </h2>
+  <div class="navbar__container-pc" (click)="SwitchOption()" *ngIf="this.SwitchMenuOptions">
+    <button class="navbar-button--pc" mat-icon-button>
+        <mat-icon>arrow_left</mat-icon>
+    </button>
+    <h3 routerLink="/home"> 
+      Back
+    </h3>
   </div>
+
   <!-- Cart -->
   <div class="navbar__container-cart">
     <button mat-icon-button class="navbar-button--cart" matBadge="8" matBadgePosition="after" matBadgeColor="warn">

@@ -25,6 +25,7 @@
     ],
     "paths": {
       // Home
+      "@home/module": ["src/app/modules/home/index.ts"],
       "@home/components": ["src/app/modules/home/components/index.ts"],
       "@home/views": ["src/app/modules/home/views/index.ts"],
       // Shared
