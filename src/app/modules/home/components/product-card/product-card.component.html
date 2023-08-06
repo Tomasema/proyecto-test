@@ -8,7 +8,7 @@
     </mat-card-content>
     <mat-card-actions>
       <mat-card-subtitle class="product--subtitle">{{producto.precio | currency}}</mat-card-subtitle>
-      <button mat-button color="primary" class="product--buy">
+      <button mat-button (click)="onAddToCart()" color="primary" class="product--buy">
         <mat-icon>add_shopping_cart</mat-icon>
         Agregar al carro de compras
       </button>

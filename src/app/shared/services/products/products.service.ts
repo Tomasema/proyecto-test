@@ -15,13 +15,13 @@ export class ProductService {
   
   public getProduct(): Observable<any>{
     return this._http
-			.get<Productos>(`${environment.urlProductos}.`, {
+			.get<Productos>(`${environment.urlProductos}`, {
 			})
     }
 
     public getSubcategorias(): Observable<any>{
       return this._http
-        .get<SubCategorias>(`${environment.urlSubcategorias}.`, {
+        .get<SubCategorias>(`${environment.urlSubcategorias}`, {
         })
       }
 }

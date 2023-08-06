@@ -1,7 +1,7 @@
 
     <div class="product-container">
-        <div class="product-card"*ngFor="let product of listaProductos">
-            <app-product-card  [producto]="product"></app-product-card>
+        <div class="product-card" *ngFor="let product of listaProductos">
+            <app-product-card  (addedProduct)="onAddToShoppingCart($event)" [producto]="product"></app-product-card>
         </div>
     </div>
 
